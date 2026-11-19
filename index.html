@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>紫电视频 · 紫电光影 | 高清电影·热播剧·短剧·动漫·综艺免费在线</title>
+<meta name="keywords" content="紫电视频,紫电光影,高清影院,免费电影,电视剧推荐,短剧大全,动漫新番,综艺热播,在线视频">
+<meta name="description" content="紫电视频 — 紫电光影，雷霆视界。海量高清电影、热播剧、短剧、动漫、综艺免费在线，极速体验，电光石火间尽享视听盛宴。">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="theme-color" content="#140b26">
+<meta name="format-detection" content="telephone=no">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="紫电视频 · 紫电光影">
+<meta property="og:title" content="紫电视频 · 紫电光影 | 高清电影·热播剧·短剧·动漫·综艺免费在线">
+<meta property="og:description" content="紫电视频 — 紫电光影，雷霆视界。海量高清电影、热播剧、短剧、动漫、综艺免费在线，极速体验，电光石火间尽享视听盛宴。">
+<meta property="og:locale" content="zh_CN">
+<style>
+:root{
+  --bg:#0d0718;
+  --bg-2:#150c2a;
+  --panel:rgba(255,255,255,0.045);
+  --panel-2:rgba(255,255,255,0.08);
+  --line:rgba(167,139,250,0.22);
+  --violet:#a855f7;
+  --violet-2:#6d28d9;
+  --electric:#c084fc;
+  --text:#ece8f9;
+  --muted:#a99fc4;
+  --radius:16px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg);
+  color:var(--text);
+  font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",system-ui,sans-serif;
+  font-size:16px;
+  line-height:1.85;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  background-image:
+    radial-gradient(circle at 12% -6%, rgba(139,92,246,0.34), transparent 46%),
+    radial-gradient(circle at 88% 4%, rgba(56,189,248,0.14), transparent 42%),
+    radial-gradient(circle at 50% 100%, rgba(109,40,217,0.20), transparent 55%);
+  background-attachment:fixed;
+}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:1160px;margin:0 auto;padding:0 22px}
+.site-header{
+  position:sticky;top:0;z-index:50;
+  backdrop-filter:blur(14px);
+  background:rgba(13,7,24,0.62);
+  border-bottom:1px solid transparent;
+  transition:background .3s ease,border-color .3s ease,box-shadow .3s ease;
+}
+.site-header.is-solid{
+  background:rgba(13,7,24,0.92);
+  border-bottom-color:var(--line);
+  box-shadow:0 10px 30px rgba(0,0,0,0.45);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:70px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:11px}
+.brand-mark{
+  width:40px;height:40px;border-radius:12px;display:grid;place-items:center;
+  font-size:20px;font-weight:700;color:#fff;
+  background:linear-gradient(145deg,#8b5cf6,#4c1d95 78%);
+  box-shadow:0 0 0 1px rgba(192,132,252,0.55) inset,0 8px 22px rgba(109,40,217,0.55);
+}
+.brand-text{display:flex;flex-direction:column;line-height:1.25}
+.brand-text strong{font-size:18px;letter-spacing:.6px}
+.brand-text em{font-style:normal;font-size:12px;color:var(--muted);letter-spacing:1.4px}
+.site-nav{display:flex;gap:6px;flex-wrap:wrap}
+.site-nav a{
+  font-size:14px;color:var(--muted);padding:7px 12px;border-radius:9px;
+  transition:color .22s ease,background .22s ease;
+}
+.site-nav a:hover{color:#fff;background:var(--panel-2)}
+.hero{padding:74px 0 54px;position:relative}
+.hero::after{
+  content:"";position:absolute;left:22px;right:22px;bottom:0;height:1px;
+  background:linear-gradient(90deg,transparent,rgba(168,85,247,0.55),transparent);
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;font-size:13px;letter-spacing:2px;
+  color:#d8c8ff;border:1px solid var(--line);border-radius:999px;padding:6px 15px;
+  background:rgba(168,85,247,0.10);margin-bottom:22px;
+}
+h1{
+  font-size:clamp(30px,4.6vw,50px);line-height:1.24;letter-spacing:1px;
+  background:linear-gradient(100deg,#ffffff 8%,#d8b4fe 46%,#a78bfa 78%,#ffffff 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.hero .lead{max-width:820px;margin-top:20px;font-size:17px;color:#cfc7e6}
+.tag-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px}
+.tag-row span{
+  font-size:13px;color:#e6dcff;padding:6px 14px;border-radius:999px;
+  border:1px solid var(--line);background:var(--panel);
+}
+.hero-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:34px}
+.stat{
+  border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;
+  background:linear-gradient(160deg,rgba(168,85,247,0.12),rgba(255,255,255,0.02));
+}
+.stat b{display:block;font-size:22px;color:#e9dcff;letter-spacing:.5px}
+.stat i{font-style:normal;font-size:13px;color:var(--muted)}
+section{padding:56px 0}
+.sec-head{margin-bottom:30px}
+.sec-head h2{font-size:clamp(22px,2.6vw,30px);letter-spacing:.6px;line-height:1.4}
+.sec-head h2::before{
+  content:"";display:inline-block;width:7px;height:22px;margin-right:12px;
+  vertical-align:-3px;border-radius:4px;
+  background:linear-gradient(180deg,#c084fc,#4c1d95);
+  box-shadow:0 0 16px rgba(168,85,247,0.85);
+}
+.sec-head p{margin-top:10px;color:var(--muted);font-size:15px}
+.prose p{margin-bottom:16px;color:#d5cee8}
+.prose p:last-child{margin-bottom:0}
+.cat-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.cat-card{
+  border:1px solid var(--line);border-radius:var(--radius);padding:22px 22px 20px;
+  background:linear-gradient(165deg,rgba(255,255,255,0.055),rgba(255,255,255,0.015));
+  transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+}
+.cat-card:hover{transform:translateY(-4px);border-color:rgba(192,132,252,0.55);box-shadow:0 18px 38px rgba(76,29,149,0.35)}
+.cat-card h3{font-size:18px;margin-bottom:10px;display:flex;align-items:center;gap:9px}
+.cat-card h3 span{
+  font-size:12px;color:#e9dcff;border:1px solid var(--line);border-radius:6px;
+  padding:2px 8px;background:rgba(168,85,247,0.16);letter-spacing:1px;
+}
+.cat-card p{font-size:14.5px;color:#c8c0dd}
+.pick-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.pick{
+  border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  background:linear-gradient(160deg,rgba(139,92,246,0.16),rgba(13,7,24,0.9) 62%);
+  display:flex;flex-direction:column;
+}
+.pick-top{
+  padding:14px 18px;font-size:12.5px;letter-spacing:1.6px;color:#d9c9ff;
+  border-bottom:1px solid var(--line);background:rgba(255,255,255,0.035);
+}
+.pick-body{padding:18px}
+.pick-body h3{font-size:17px;margin-bottom:9px}
+.pick-body p{font-size:14px;color:#c6bed9}
+.pick-body .meta{margin-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+.pick-body .meta i{
+  font-style:normal;font-size:12px;color:#bcb0d8;border:1px solid var(--line);
+  border-radius:6px;padding:2px 8px;background:rgba(255,255,255,0.04);
+}
+.adv-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;list-style:none}
+.adv-list li{
+  border:1px solid var(--line);border-radius:var(--radius);padding:20px;
+  background:var(--panel);
+}
+.adv-list h3{font-size:16px;margin-bottom:8px;color:#ede4ff}
+.adv-list p{font-size:14px;color:#c6bed9}
+.steps{list-style:none;counter-reset:step;display:grid;gap:16px}
+.steps li{
+  counter-increment:step;position:relative;padding:18px 20px 18px 66px;
+  border:1px solid var(--line);border-radius:var(--radius);background:var(--panel);
+}
+.steps li::before{
+  content:counter(step,decimal-leading-zero);position:absolute;left:18px;top:16px;
+  width:34px;height:34px;display:grid;place-items:center;border-radius:10px;
+  font-size:14px;font-weight:700;color:#f3ecff;
+  background:linear-gradient(150deg,#8b5cf6,#4c1d95);
+  box-shadow:0 6px 18px rgba(109,40,217,0.5);
+}
+.steps h3{font-size:16px;margin-bottom:6px}
+.steps p{font-size:14px;color:#c6bed9}
+.faq{display:grid;gap:12px}
+.faq details{
+  border:1px solid var(--line);border-radius:14px;background:var(--panel);
+  padding:16px 20px;transition:border-color .22s ease,background .22s ease;
+}
+.faq details[open]{border-color:rgba(192,132,252,0.5);background:rgba(168,85,247,0.09)}
+.faq summary{
+  cursor:pointer;font-size:15.5px;font-weight:600;color:#efe7ff;list-style:none;
+  display:flex;align-items:center;gap:10px;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::before{
+  content:"";width:8px;height:8px;border-radius:50%;flex:0 0 auto;
+  background:linear-gradient(150deg,#c084fc,#6d28d9);
+  box-shadow:0 0 12px rgba(192,132,252,0.9);
+}
+.faq details p{margin-top:10px;font-size:14.5px;color:#c8c0dd;padding-left:18px}
+.site-footer{
+  margin-top:40px;padding:44px 0 34px;border-top:1px solid var(--line);
+  background:rgba(255,255,255,0.022);
+}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:28px}
+.foot-grid h4{font-size:14px;letter-spacing:1.6px;color:#e3d7ff;margin-bottom:12px}
+.foot-grid p,.foot-grid a{font-size:13.5px;color:var(--muted);line-height:2}
+.foot-grid a:hover{color:#e9dcff}
+.foot-bottom{
+  margin-top:26px;padding-top:18px;border-top:1px dashed rgba(167,139,250,0.22);
+  font-size:13px;color:#8d84a8;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;
+}
+#backTop{
+  position:fixed;right:22px;bottom:26px;width:44px;height:44px;border-radius:13px;
+  border:1px solid rgba(192,132,252,0.5);background:rgba(76,29,149,0.85);color:#f4ecff;
+  font-size:18px;cursor:pointer;opacity:0;visibility:hidden;transition:opacity .25s ease,visibility .25s ease,transform .25s ease;
+  transform:translateY(10px);backdrop-filter:blur(8px);
+}
+#backTop.is-show{opacity:1;visibility:visible;transform:translateY(0)}
+@media (max-width:900px){
+  .cat-list,.pick-grid,.adv-list{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .hero{padding:52px 0 40px}
+  .hero-stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width:560px){
+  body{font-size:15.5px}
+  .header-inner{min-height:auto;padding:12px 0;gap:10px}
+  .site-nav a{padding:6px 9px;font-size:13px}
+  section{padding:42px 0}
+  .hero-stats{grid-template-columns:1fr}
+}
+</style>
+<script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body id="top">
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="紫电视频首页">
+      <span class="brand-mark">紫</span>
+      <span class="brand-text"><strong>紫电视频</strong><em>紫电光影 · 雷霆视界</em></span>
+    </a>
+    <nav class="site-nav" aria-label="主导航">
+      <a href="#intro">平台介绍</a>
+      <a href="#category">影视分类</a>
+      <a href="#hot">热门推荐</a>
+      <a href="#advantage">观看优势</a>
+      <a href="#guide">使用指南</a>
+      <a href="#faq">常见问题</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="wrap">
+      <p class="eyebrow">雷霆视界 · 电光石火</p>
+      <h1 id="hero-title">紫电视频 · 紫电光影</h1>
+      <p class="lead">一个以中文影视为主线的在线视频入口。我们把高清电影、热播剧、短剧、动漫新番与综艺热播收拢在同一处，页面清爽、路径直接、点开即看。不用注册账号，不用反复跳转，把等待的时间还给内容本身。</p>
+      <div class="tag-row">
+        <span>高清影院</span>
+        <span>免费电影</span>
+        <span>电视剧推荐</span>
+        <span>短剧大全</span>
+        <span>动漫新番</span>
+        <span>综艺热播</span>
+        <span>在线视频</span>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><b>五大板块</b><i>电影 · 电视剧 · 短剧 · 动漫 · 综艺</i></div>
+        <div class="stat"><b>多维筛选</b><i>类型 · 地区 · 年份 · 口碑</i></div>
+        <div class="stat"><b>多端适配</b><i>手机 · 平板 · 桌面浏览器</i></div>
+        <div class="stat"><b>免注册</b><i>打开网页即可播放</i></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="intro" aria-labelledby="intro-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="intro-title">关于紫电视频：把一间高清影院搬进浏览器</h2>
+        <p>紫电光影，是我们对"快"与"亮"的执念</p>
+      </div>
+      <div class="prose">
+        <p>紫电视频，也叫紫电光影，是一个面向中文观众的在线影视观看入口。"雷霆视界"是它的品牌主张，取意于紫色闪电划破夜空的瞬间：迅疾、明亮、一击即中。我们希望观影的第一步足够干脆——输入网址、打开页面、点击封面，播放器就开始工作，中间不夹带任何多余的环节。对很多用户来说，看片是一件临时起意的事，如果开场前的门槛太高，兴趣往往就在加载条里被磨光了，所以紫电视频选择把页面做轻、把路径做短。</p>
+        <p>在内容组织上，紫电视频没有沿用门户式的层层堆叠，而是把全部资源归入电影、电视剧、短剧、动漫、综艺五个固定板块，每个板块内部再用类型、地区、年份、排序四条维度做交叉筛选。这样做的直接好处是：当你想看一部"近三年的国产悬疑电影"，不需要在几十个频道之间来回试探，两次点击就能落到候选列表；当你想在通勤路上打发二十分钟，"十分钟以内的短剧"也能被精确框出来。找片的确定性，比片库的绝对数量更能决定体验的好坏。</p>
+        <p>我们同样在意中文语境下的细节。所有片名、别名、简介、标签都由中文原生撰写，避免机器直译带来的生硬感；剧集类内容会标注更新进度与完结状态，番剧会提示所属季度，综艺会注明更新周期，短剧则统一标注单集时长与总集数。你在列表页看到的每一条信息，都对应一个真实可判断的选择依据，而不是为了填满版面而存在的装饰。紫电视频想做的，是把"这片子合不合我口味"这道判断题，尽可能交回到你自己手里。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="category" aria-labelledby="cat-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="cat-title">五大内容分类，覆盖全年龄段的观影需求</h2>
+        <p>电影、电视剧、短剧、动漫、综艺，各自独立又彼此衔接</p>
+      </div>
+      <div class="cat-list">
+        <article class="cat-card">
+          <h3>高清影院 · 电影 <span>FILM</span></h3>
+          <p>电影板块是紫电视频的门面，收录剧情长片、科幻、悬疑、动作、爱情、喜剧、纪录、家庭等主流类型，并按年代与地区做了细分。喜欢老片的观众可以在修复专区里找到画质经过重新处理的经典作品，偏爱新片的观众则能通过年份排序直达近期热门。每部影片的详情页都会给出时长、类型、语言与一句话看点，方便你在十几秒内完成取舍，而不必先看三分钟预告片再决定。</p>
+        </article>
+        <article class="cat-card">
+          <h3>热播剧场 · 电视剧 <span>SERIES</span></h3>
+          <p>电视剧板块覆盖国产剧、港台剧、日韩剧与欧美剧，重点解决"追剧"这件事的两个痛点：进度与连贯。列表页会直接显示已更新集数与完结标记，连载中的剧集会放在前排并注明更新时间，避免你反复确认是否上新。进入详情页后，剧集按集合顺序排列，支持连播，看完一集自动接下一集，中途不打断；若是长剧，还可以按季归档，从第一季到最新一季一气看完。</p>
+        </article>
+        <article class="cat-card">
+          <h3>短剧大全 · 竖屏时代 <span>SHORT</span></h3>
+          <p>短剧是近几年增长最快的内容形态，紫电视频为此单独开辟了短剧大全板块。这里的作品单集通常在一到五分钟之间，全剧十几到几十集不等，逆袭、甜宠、悬疑、职场、古装、家庭等题材齐备。因为节奏快、转折密，短剧非常适合通勤、排队、午休这类碎片时段，一集看完刚好够一次红绿灯的等待。板块支持按总时长筛选，你可以只挑二十分钟以内能刷完的整部作品。</p>
+        </article>
+        <article class="cat-card">
+          <h3>动漫新番 · 番剧频道 <span>ANIME</span></h3>
+          <p>动漫板块同时供给国漫与日漫，并按照季度整理新番。每季开播前会形成一份"新番表"，标注题材方向与更新时间，方便你提前决定要追哪几部；开播后则按周更新，追番进度一目了然。除新番外，经典番剧也做了完整归档，热血、治愈、悬疑、日常、运动等标签细化到子类型，想找一部轻松的下饭番，或是一部需要正襟危坐看完的剧场版，都能在两次筛选内定位。</p>
+        </article>
+        <article class="cat-card">
+          <h3>综艺热播 · 周更清单 <span>SHOW</span></h3>
+          <p>综艺板块以周为单位组织内容，覆盖竞技、音乐、真人秀、脱口秀、文化纪实与生活观察等类型。综艺的特点是更新稳定、时效性强，因此板块首页会把"本周更新"单独拎出来，让你一眼看清哪些节目有新一期。对于体量较大的季播综艺，详情页会按季与期双层结构排列，往期内容不会因为新一季上线而被挤到看不见的位置，补番式追综艺也因此变得可行。</p>
+        </article>
+        <article class="cat-card">
+          <h3>跨板块聚合 · 主题片单 <span>LIST</span></h3>
+          <p>除了五大板块，紫电视频还会围绕具体场景组织跨类别的主题片单，例如"周末两小时""深夜独处""全家共看""雨天窝在沙发"。这类片单不区分电影还是剧集，只按情绪与时长归类，适合那些"想看点东西但说不清想看什么"的时刻。片单会随内容更新持续调整，同一主题下既有刚上线的新作，也有经得起反复重看的老片，形成一条可以长期翻找的线索。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="hot" aria-labelledby="hot-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="hot-title">本周热门推荐：六个值得打开的入口</h2>
+        <p>按题材与场景挑片，比按热度盲选更省时间</p>
+      </div>
+      <div class="pick-grid">
+        <article class="pick">
+          <div class="pick-top">高清影院 · 悬疑推理</div>
+          <div class="pick-body">
+            <h3>层层反转的推理长片</h3>
+            <p>适合一个人、关灯、把手机调成静音。这类影片靠信息密度取胜，前二十分钟埋下的细节往往在最后一刻才被回收，中途快进会直接丢掉解谜的乐趣。建议预留完整的两小时，跟着叙事节奏走。</p>
+            <div class="meta"><i>120 分钟以上</i><i>需专注观看</i><i>中文字幕</i></div>
+          </div>
+        </article>
+        <article class="pick">
+          <div class="pick-top">热播剧场 · 都市群像</div>
+          <div class="pick-body">
+            <h3>可以开着倍速追的长剧</h3>
+            <p>都市群像剧的优势在于人物众多、线索并行，哪怕隔几天再看也不会彻底断线。适合下班后当作背景音，一边收拾房间一边推进。追到中段后人物关系逐渐收紧，观感会明显加快。</p>
+            <div class="meta"><i>周更连载</i><i>单集 45 分钟</i><i>支持连播</i></div>
+          </div>
+        </article>
+        <article class="pick">
+          <div class="pick-top">短剧大全 · 强情节</div>
+          <div class="pick-body">
+            <h3>二十分钟刷完一整个故事</h3>
+            <p>短剧的节奏几乎没有缓冲区，第一集第三十秒就要给出钩子。这类作品最适合碎片时间，一次通勤刚好刷完一部。如果只想试试水，可以先看前三集判断题材是否对味，再决定是否追完。</p>
+            <div class="meta"><i>单集 1 至 5 分钟</i><i>竖屏友好</i><i>全剧可一次看完</i></div>
+          </div>
+        </article>
+        <article class="pick">
+          <div class="pick-top">动漫新番 · 本季追番</div>
+          <div class="pick-body">
+            <h3>跟着季度表一部部追下去</h3>
+            <p>新番按周更新，追番的乐趣一半来自等待。板块会标注每部作品的更新日与已播集数，方便你把一周的观看时间排开。若不想被吊着，也可以等完结后再一次性补完。</p>
+            <div class="meta"><i>按季归档</i><i>每周更新</i><i>国漫与日漫</i></div>
+          </div>
+        </article>
+        <article class="pick">
+          <div class="pick-top">综艺热播 · 轻放松</div>
+          <div class="pick-body">
+            <h3>不需要连贯记忆的下饭节目</h3>
+            <p>竞技与真人秀类综艺单期独立成篇，随时打开都能看进去，是搭饭的最佳选择。文化纪实类则需要一点耐心，更适合周末白天。两类节目在板块内分开陈列，不必自己分辨。</p>
+            <div class="meta"><i>单期独立</i><i>周更清单</i><i>往期可回看</i></div>
+          </div>
+        </article>
+        <article class="pick">
+          <div class="pick-top">主题片单 · 全家共看</div>
+          <div class="pick-body">
+            <h3>一部片子照顾三代人的口味</h3>
+            <p>家庭观影最难的是平衡：孩子要热闹，长辈要看懂，中间那位想不困。这类片单挑选叙事线清晰、情绪正向、时长适中的作品，画面与台词都经过筛选，适合节假日客厅里的大屏场景。</p>
+            <div class="meta"><i>时长适中</i><i>适合大屏</i><i>跨年龄</i></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="advantage" aria-labelledby="adv-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="adv-title">为什么选择紫电视频：六个看得见的差别</h2>
+        <p>把注意力留给内容，而不是留给操作</p>
+      </div>
+      <ul class="adv-list">
+        <li>
+          <h3>免注册直接观看</h3>
+          <p>打开网页就能进入播放流程，不需要手机号、不需要验证码，也不会因为忘记密码被挡在门外。想看片的时候，少一步就是少一步。</p>
+        </li>
+        <li>
+          <h3>页面轻，弱网也能开</h3>
+          <p>首页结构克制，不堆自动播放的横幅与弹窗，在移动网络下也能较快呈现内容骨架。对流量敏感的用户，可以先看清列表再决定播不播。</p>
+        </li>
+        <li>
+          <h3>多线路与失败重试</h3>
+          <p>遇到某条线路不通，可以手动切换其他线路继续播放，不必从头再找一遍片子。播放器会保留进度，切换后接着看即可。</p>
+        </li>
+        <li>
+          <h3>分类与标签成体系</h3>
+          <p>五个板块、四维筛选，配合题材标签，把"随便看看"变成"有方向地挑"。标签体系长期保持一致，用得越久越顺手。</p>
+        </li>
+        <li>
+          <h3>多端自适应布局</h3>
+          <p>手机、平板与桌面浏览器都能正常使用，导航在窄屏下自动折叠为紧凑形式，触控区域也做了放大处理，躺着刷剧不会点错。</p>
+        </li>
+        <li>
+          <h3>本地记录不清空</h3>
+          <p>收藏与观看记录保存在你自己的浏览器本地，不依赖账号体系，也不会因为换设备被同步覆盖。清理浏览器数据前记得留意这一点。</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="guide" aria-labelledby="guide-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="guide-title">使用指南：四步完成一次顺畅的观看</h2>
+        <p>从进入页面到开始播放，通常不超过一分钟</p>
+      </div>
+      <ol class="steps">
+        <li>
+          <h3>选择内容板块</h3>
+          <p>顶部导航固定了电影、电视剧、短剧、动漫、综艺五个入口，点击即可跳转到对应区块。如果还没想好要看什么，可以先浏览本页的热门推荐与主题片单，按场景缩小范围。</p>
+        </li>
+        <li>
+          <h3>用筛选器锁定候选</h3>
+          <p>进入板块后，依次选择类型、地区、年份，再按热度或更新时间排序。筛选条件可以叠加，也可以随时重置。列表页只展示必要信息，封面、片名、进度与一句话简介一次看全。</p>
+        </li>
+        <li>
+          <h3>进入详情页并播放</h3>
+          <p>点击封面进入详情页，先确认时长与简介是否符合预期，再选择播放线路。播放器支持清晰度切换与全屏，剧集类内容可开启连播，看完一集自动进入下一集。</p>
+        </li>
+        <li>
+          <h3>收藏与续看</h3>
+          <p>遇到想留着以后看的作品，可以加入收藏；已经看了一部分的，下次打开会从记录处继续。所有记录保存在浏览器本地，清理缓存或更换浏览器后会重新开始。</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="sec-head">
+        <h2 id="faq-title">常见问题</h2>
+        <p>关于访问、播放与内容的集中答复</p>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>需要注册账号或付费才能观看吗</summary>
+          <p>不需要注册，也不需要付费。紫电视频以开放浏览的方式提供内容入口，打开网页即可开始观看。我们不做强制登录，也不设置试看时长限制，希望你从进入到播放之间尽量少被打断。页面中展示的少量广告用于支撑站点日常运营，属于常规的展示形式。</p>
+        </details>
+        <details>
+          <summary>播放时出现卡顿或加载缓慢怎么办</summary>
+          <p>先确认当前网络是否稳定，其次尝试切换片源线路，不同线路的负载情况并不相同。若仍无改善，可以适当降低清晰度，例如从超清切换到高清或标清；在移动网络下建议选择标清以减少缓冲。部分作品在晚间高峰时段压力较大，换个时间观看通常会有明显改善。</p>
+        </details>
+        <details>
+          <summary>清晰度应该怎么选</summary>
+          <p>选择原则是"够用就好"。手机屏幕上高清与超清的观感差距有限，反而超清更容易触发缓冲；桌面大屏或投屏场景则值得开到更高清晰度。如果观看的是修复版老片，原片的画质上限本身就有限，强行开启最高档位不会带来画面提升，只会增加加载时间。</p>
+        </details>
+        <details>
+          <summary>内容多久更新一次</summary>
+          <p>剧集与综艺按各自的排播节奏更新，列表页会标注已更新集数与最近更新时间，连载中的作品始终靠前显示。动漫新番通常按周更新，季度交替时会有一次集中的新番上架。电影板块的更新不固定，取决于片源上线情况，可以按"最近更新"排序查看新进内容。</p>
+        </details>
+        <details>
+          <summary>在手机上如何全屏或投屏到电视</summary>
+          <p>进入播放页后，点击播放器右下角的全屏按钮即可横屏铺满；部分浏览器需要先允许屏幕旋转。投屏方面，可将手机与电视连接到同一无线网络，使用系统自带的投屏功能或浏览器提供的投屏入口选择电视设备。若电视端不支持，也可以直接用电视浏览器访问本站。</p>
+        </details>
+        <details>
+          <summary>找不到某部具体的片子怎么办</summary>
+          <p>建议先用片名的核心词而非完整长标题检索，很多作品存在别名与译名差异。若仍然没有结果，可能该作品尚未收录或已下架。你可以在对应板块里改用题材与年份筛选，寻找题材相近的替代作品；本站的片单栏目也提供了按情绪与场景组织的推荐，往往能更快找到能看下去的那一部。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>紫电视频 · 紫电光影</h4>
+        <p>雷霆视界，电光石火。以中文影视为主线的在线视频入口，聚合高清电影、热播剧、短剧、动漫与综艺，页面轻、路径短、打开即看。我们持续整理分类与标签体系，让找片这件事回归简单。</p>
+      </div>
+      <div>
+        <h4>内容导航</h4>
+        <a href="#intro">平台介绍</a><br>
+        <a href="#category">影视分类</a><br>
+        <a href="#hot">热门推荐</a><br>
+        <a href="#advantage">观看优势</a><br>
+        <a href="#guide">使用指南</a><br>
+        <a href="#faq">常见问题</a>
+      </div>
+      <div>
+        <h4>使用提示</h4>
+        <p>本站不存储任何视频文件，内容索引整理自公开网络资源，仅供个人学习与交流使用。如相关权利人认为存在侵权，可联系站点处理。请合理安排观看时间，注意用眼休息。</p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 紫电视频 · 紫电光影　保留所有权利</span>
+      <span>高清电影 · 热播剧 · 短剧 · 动漫 · 综艺 · 在线视频</span>
+    </div>
+  </div>
+</footer>
+<button id="backTop" type="button" aria-label="返回顶部">↑</button>
+<script>
+(function(){
+  var header = document.querySelector('.site-header');
+  var topBtn = document.getElementById('backTop');
+  var navLinks = document.querySelectorAll('.site-nav a');
+  function onScroll(){
+    var y = window.pageYOffset || document.documentElement.scrollTop || 0;
+    if(y > 40){ header.classList.add('is-solid'); } else { header.classList.remove('is-solid'); }
+    if(y > 420){ topBtn.classList.add('is-show'); } else { topBtn.classList.remove('is-show'); }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  for(var i = 0; i < navLinks.length; i++){
+    navLinks[i].addEventListener('click', function(e){
+      var target = document.querySelector(this.getAttribute('href'));
+      if(!target){ return; }
+      e.preventDefault();
+      var top = target.getBoundingClientRect().top + (window.pageYOffset || 0) - 78;
+      window.scrollTo({ top: top, behavior: 'smooth' });
+    });
+  }
+})();
+</script>
+</body>
+</html>
